@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="MobileOptimized" content="width" />
+    <title>App of weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid" id="changeFont">
+        <nav class="navbar navbar-expand-lg">
+            
+            
+                <class class="navbar-nav" style="width: 100%;">
+                    <div class="btn-group mr-auto " role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-warning" onclick="celsius()">Celsius</button>
+                        <button type="button" class="btn btn-danger" onclick="fahrenheit()">Fahrenheit</button>
+                
+                    </div>
+          <p class="mr-auto" id="myCity"></p>
+          <img src="/Images/Ubication.png" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy" onclick="myUbication()">
+          <form class="form-inline my-2 my-lg-0 ">
+              <input
+              id="findUbication"
+              class="form-control mr-sm-2 "
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              />
+              <button class="btn btn-outline-warning my-2 my-sm-0" type="button" onclick="findCity()">
+                  Search
+                </button>
+            </form>
+        </nav>
+        <div class="container m-10px">
+          <div class="container-header">
+            <h3 id="date"></h3>
+            <h3 id="time"></h3>
+          </div>
+          <div class="showDegree">
+            <p id="degree" class="temperatures"></p>
+            <img src="http://openweathermap.org/img/wn/@2x.png" id="icon" alt="">
+          </div>
+        
+          <div id="info">
+            <label for="temp">Temperature: </label>
+           <h2 id="temp" class="temperatures"></h2>
+           <br><label for="des">Description:</label>
+           <h2 id='description' style="display: inline-block;"></h2>
+          <br> <label for="hum">Humidity:</label>
+           <h2 id="humidity" style="display: inline-block;"></h2>
+          <br> <label for="tempMax">Temperature max. :</label>
+           <h2 id="tempMax" class="temperatures"></h2>
+           <br> <label for="tempMax">Temperature min. :</label>
+           <h2 id="tempMin" class="temperatures"></h2>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="day">
+            <p></p>
+            <label for="max">Max:</label>
+            <p id="max1" class="temperatures"></p>
+           <br> <label for="max">Min:</label>
+            <p id="min1" class="temperatures"></p>
+            <label for="des" style="font-size: 20px;">Description:</label>
+            <p id="des1">Description:</p>
+            <img src="http://openweathermap.org/img/wn/@2x.png" alt="" id="icon1">
+          </div>
+          <div class="day">
+            <p></p>
+            <label for="max">Max:</label>
+            <p id="max2" class="temperatures"></p>
+           <br> <label for="max">Min</label>
+            <p id="min2" class="temperatures"></p>
+            <label for="des" style="font-size: 20px;">Description:</label>
+            <p id="des2">Description:</p>
+            <img src="http://openweathermap.org/img/wn/@2x.png" alt="" id="icon2">
+          </div>
+          <div class="day" id="day3">
+            <p></p>
+            <label for="max">Max:</label>
+            <p id="max3" class="temperatures"></p>
+           <br> <label for="max">Min:</label>
+            <p id="min3" class="temperatures"></p>
+            <label for="des" style="font-size: 20px;">Description:</label>
+            <p id="des3">Description:</p>
+            <img src="http://openweathermap.org/img/wn/@2x.png" alt="" id="icon3">
+          </div>
+          <div class="day" id="day4">
+            <p></p>
+            <label for="max">Max:</label>
+            <p id="max4" class="temperatures"></p>
+           <br><label for="max">Min:</label>
+            <p id="min4" class="temperatures"></p>
+            <label for="des" style="font-size: 20px;">Description:</label>
+            <p id="des4">Description:</p>
+            <img src="http://openweathermap.org/img/wn/@2x.png" alt="" id="icon4">
+          </div>
+          <div class="day" id="day5">
+            <p></p>
+            <label for="max">Max:</label>
+            <p id="max5" class="temperatures"></p>
+           <br> <label for="max">Min:</label>
+            <p id="min5" class="temperatures"></p>
+            <label for="des" style="font-size: 20px;">Description:</label>
+            <p id="des5"></p>
+            <img src="http://openweathermap.org/img/wn/@2x.png" alt="" id="icon5">
+          </div>
+          <div class="day" id="day6">
+            <p></p>
+            <label for="max">Max:</label>
+            <p id="max6" class="temperatures"></p>
+           <br> <label for="max">Min:</label>
+            <p id="min6" class="temperatures"></p>
+            <label for="des" style="font-size: 20px;">Description:</label>
+            <p id="des6"></p>
+            <img src="http://openweathermap.org/img/wn/@2x.png" alt="" id="icon6">
+          </div>
+          <div class="day" id="day7">
+            <p></p>
+            <label for="max">Max:</label>
+            <p id="max7" class="temperatures"></p>
+          <br>  <label for="max">Min:</label>
+            <p id="min7" class="temperatures"></p>
+            <label for="des" style="font-size: 20px;">Description:</label>
+            <p id="des7"></p>
+            <img src="http://openweathermap.org/img/wn/@2x.png" alt="" id="icon7">
+          </div>
+        </div>
+        </div>
+    
+
+    <script src="app.js"></script>
+  </body>
+</html>

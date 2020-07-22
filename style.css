@@ -1,0 +1,113 @@
+.container-fluid{
+    background:url(/Images/Dia.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.afternoon{
+    background:url(/Images/Atardecer.webp) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.night{
+    background:url(/Images/Noche.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container{
+    background: rgb(64, 65, 66, 0.5);
+    border-radius: 10px;
+    min-height: 315px;
+}
+
+#degree{
+    color: white;
+    font-size: 60px;
+    display: block !important;
+}
+
+#date{
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+#time{
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#icon{
+   display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+#info{
+    color: white;
+    display: inline-block;
+    width: 50%;
+    margin-top: 15px;
+    min-width: 200px;
+}
+
+.grid{
+    padding: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.day {
+    background: rgb(64, 65, 66, 0.7);
+    color: white;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    max-height: 310px;
+}
+
+#myCity{
+    color: white;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+.dayNight{
+    background: rgba(255, 255, 255, 0.5);
+    
+}
+
+label{
+font-size: 20px;
+
+}
+
+.container h2{
+    font-size: 20px;
+}
+
+.temperatures {
+    display: inline-block;
+}
+
+.container-header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.showDegree{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
