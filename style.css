@@ -111,3 +111,11 @@ font-size: 20px;
     text-align: center;
 }
 
+.infoDays{
+    text-align: center;
+    color: white;
+}
+
+.btn{
+height: 40px;
+}

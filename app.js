@@ -5,7 +5,7 @@ const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(date)
 const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(date)
 
 let show= document.getElementById('date').innerHTML =  ye.concat(', ' + mo + ' ' + da) 
-let time= document.getElementById('time').innerHTML = 'Time is:  ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
+let time= document.getElementById('time').innerHTML =  'Time is:  ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
 const apikey = '5a19bc4a4cb468316713d4ffa2b38d08'
 let icon = document.getElementById('icon')
 
